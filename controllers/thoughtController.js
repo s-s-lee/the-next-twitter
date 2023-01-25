@@ -25,19 +25,10 @@ module.exports = {
       .catch((err) => {console.log(err);
         return res.status(500).json(err)});
   },
-<<<<<<< HEAD
   // Update a specific thought
   updateThought(req, res) {
     Thought.findOneAndUpdate(
         { _id: req.params.thoughtId }, { $set: req.body }, { runValidators: true, new: true }
-=======
-  // update a specific thought
-  updateThought(req, res) {
-    Thought.findOneAndUpdate(
-        { _id: req.params.thoughtId },
-        { $set: req.body },
-        { runValidators: true, new: true }
->>>>>>> 521b8ee0f8f1aa49e436294126be540473c47818
     ).then((thought) =>
         !thought
         ? res.status(404).json({ message: 'No thought with that ID' })
@@ -50,7 +41,6 @@ module.exports = {
       .then((thought) =>
         !thought
           ? res.status(404).json({ message: 'No thought with that ID' })
-<<<<<<< HEAD
           // Update user associated with thought being deleted
           : User.findOneAndUpdate(
             { thoughts: req.params.thoughtId }, { $pull: { thoughts: req.params.thoughtId } }, { new: true },
@@ -82,14 +72,4 @@ module.exports = {
           : res.json(thought)
     ).catch((err) => res.status(500).json(err));
   },
-=======
-          // need to update this to update the user
-          : Thought.deleteMany({ _id: { $in: user.thoughts } })
-      )
-      .then(() => res.json({ message: 'User and associated thoughts deleted!' }))
-      .catch((err) => res.status(500).json(err));
-  },
-  // add a reaction
-  // delete a reaction
->>>>>>> 521b8ee0f8f1aa49e436294126be540473c47818
 };
