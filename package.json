@@ -1,0 +1,25 @@
+{
+  "name": "the-next-twitter",
+  "version": "1.0.0",
+  "description": "An attempt to create the next Twitter",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-s-lee/the-next-twitter.git"
+  },
+  "author": "Susan Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s-s-lee/the-next-twitter/issues"
+  },
+  "homepage": "https://github.com/s-s-lee/the-next-twitter#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.4"
+  }
+}
