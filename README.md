@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # The Next Twitter 🪁
+=======
+# The Next Twitter
+>>>>>>> 521b8ee0f8f1aa49e436294126be540473c47818
 
 ## Description
 An API for a social networking web app. Perhaps it will be the next Twitter! Users can post their thoughts, add new friends, and react to their friends' thoughts. 
@@ -13,8 +17,16 @@ The backbone is made up of Express.js, MongoDB for the database, and Mongoose fo
 - [Licensing](#licensing)
 - [Contact Info](#contact-info)
 
+<<<<<<< HEAD
 ## Installation
 Clone the GitHub repo. Once repo is downloaded, to install the npm dependencies, type `npm i`.
+=======
+## Preview
+
+
+## Installation
+Clone the GitHub repo. To install the npm dependencies, type `npm i`.
+>>>>>>> 521b8ee0f8f1aa49e436294126be540473c47818
 
 Note: you'll want to use install Insomnia if you want to run tests locally.
 
