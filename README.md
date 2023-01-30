@@ -29,7 +29,7 @@ Note: you'll want to use install Insomnia if you want to run tests locally.
 
 
 ## Preview
-To see the API in action, here's a [Google Drive Link]().
+To see the API in action, here's a [Google Drive Link](https://drive.google.com/file/d/1e6dRk2pwrXodYihZjSo08miDoVWZu6OC/view?usp=share_link).
 
 <img src="./img/create-a-user.png" alt="screenshot of creating a user in Insomnia app">
 <img src="./img/get-all-users.png" alt="screenshot of getting all users in Insomnia app">
