@@ -16,7 +16,7 @@ The backbone is made up of Express.js, MongoDB for the database, and Mongoose fo
 ## Installation
 Clone the GitHub repo. Once repo is downloaded, to install the npm dependencies, type `npm i`.
 
-If you create your own seed files, before testing with Insomnia, seed your database with `npm run seed`.
+Start the server with `npm start`. There is no seed data with this repo.
 
 Note: you'll want to use install Insomnia if you want to run tests locally.
 
@@ -25,13 +25,19 @@ Note: you'll want to use install Insomnia if you want to run tests locally.
 * [MongoDB](https://www.mongodb.com/)
 * [Mongoose ODM](https://www.npmjs.com/package/mongoose)
 * [Insomnia](https://insomnia.rest/)
+* [Moment.js](https://momentjs.com/)
 
 
 ## Preview
-Google Drive Link: 
+To see the API in action, here's a [Google Drive Link]().
+
+<img src="./img/create-a-user.png" alt="screenshot of creating a user in Insomnia app">
+<img src="./img/get-all-users.png" alt="screenshot of getting all users in Insomnia app">
+<img src="./img/get-all-thoughts.png" alt="screenshot of getting all users' thoughts in Insomnia app">
+<img src="./img/create-a-reaction.png" alt="screenshot of a user creating a reaction in Insomnia app">
 
 ## Licensing
-MIT License
+[MIT License](LICENSE)
 
 ## Contact Info
 For questions about the repo, contact Susan.

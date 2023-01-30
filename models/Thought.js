@@ -1,6 +1,6 @@
 const { Schema, model, Types } = require('mongoose');
-// to include timestamps
-const dateFormat = require('../utils/dateFormat');
+// to include timestamps for users' thoughts
+const moment = require('moment');
 
 // Schema to create Reaction model
 const reactionSchema = new Schema(
@@ -21,13 +21,15 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: (createdAtVal) => dateFormat(createdAtVal),
+            get: createdAtVal => moment(createdAtVal).format("MMM DD, YYYY hh:mm a"),
         },
     },
     {
         toJSON: {
+            virtuals: true,
             getters: true,
         },
+        id: false,
     }
 );
 
@@ -42,7 +44,7 @@ const thoughtSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: (createdAtVal) => dateFormat(createdAtVal),
+            get: createdAtVal => moment(createdAtVal).format("MMM DD, YYYY hh:mm a"),
         },
         username: {
             type: String,
